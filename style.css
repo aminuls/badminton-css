@@ -41,7 +41,7 @@
         transform: rotate(0deg);
     }
     to {
-        transform: rotate(50deg);
+        transform: rotate(90deg);
     }
 }
 @keyframes rack-2 {
@@ -49,18 +49,18 @@
         transform: rotate(0deg);
     }
     to {
-        transform: rotate(-50deg);
+        transform: rotate(-90deg);
     }
 }
 /* effet of main */
 .field:hover .left-racket {
-    animation: rack-1 2s ease-in 0s infinite alternate;
+    animation: rack-1 2s steps(2, end) 0s infinite alternate;
     /* transform: rotate(45deg);
     transition-duration: .5s;
     transition-timing-function: ease-in; */
 }
 .field:hover .right-racket {
-    animation: rack-2 2s ease-in 2s infinite alternate;
+    animation: rack-2 2s steps(2, end) 2s infinite alternate;
     /* transform: rotate(-45deg);
     transition-duration: .5s;
     transition-delay: 2s;
@@ -68,7 +68,7 @@
 }
 
 .field:hover .cock{
-    animation: fly 2s ease-in-out 2s infinite alternate;
+    animation: fly 2s ease-in-out 1s infinite alternate;
 }
 /* left */
 .left {
